@@ -175,9 +175,9 @@ class DB_con
         $result1 = mysqli_query($this->dbh, "select * from tbl_ride where `cab_status`='2' and `custUser_id`=$user_id");
         return $result1;
     }
-    public function userAllR($user_id)
+    public function userAllR($user_id, $order)
     {
-        $result1 = mysqli_query($this->dbh, "select * from tbl_ride where `custUser_id`=$user_id");
+        $result1 = mysqli_query($this->dbh, "select * from tbl_ride where `custUser_id`=$user_id  order by $order");
         return $result1;
     }
 
