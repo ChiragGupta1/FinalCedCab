@@ -1,7 +1,9 @@
 <?php
-
 require_once 'config.php';
 require_once 'userHeader.php';
+if (!isset($_SESSION['user_id'])) {
+    header('location:logout.php');
+}
 $userdata = new DB_con();
 
 
