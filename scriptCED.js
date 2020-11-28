@@ -1,4 +1,12 @@
 $(document).ready(function() {
+    $('#dropdown1').on('change', function() {
+        if ($(this).val() == 50) {
+            $('#dropdown2').val('');
+            $('#dropdown2').attr("disabled", "disabled");
+        } else {
+            $('#dropdown2').removeAttr("disabled", "disabled");
+        }
+    });
 
 
     $("#userInfo2").hide();
