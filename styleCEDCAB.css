@@ -223,3 +223,7 @@ tr a:active {
         left: 30px;
     }
 }
+
+[target=_blank] {
+    pointer-events: none;
+}

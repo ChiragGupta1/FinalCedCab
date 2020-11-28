@@ -90,7 +90,8 @@ if (isset($_GET['invoice_id'])) {
                         } ?>
                     </td>
                     <td>
-                        <a href="allUsers.php?invoice_id=<?php echo $row['user_id'] ?>">Generate<p hidden>A $_GET</p></a>
+                        <a href="allUsers.php?invoice_id=<?php echo $row['user_id'] ?>" <?php if ($row['is_approved'] == '0') { ?> target="_blank" <?php
+                                                                                                                                                } ?>>Generate<p hidden>A $_GET</p></a>
                     </td>
                 </tr>
         <?php
