@@ -29,7 +29,7 @@
             <div class="dropdown-content">
                 <a href="admin.php">Pending</a>
                 <a href="customers.php">Approved</a>
-                <a href="allUsers.php">All Users</a>
+                <a href="allUsers.php">All Users(Get Invoice)</a>
             </div>
         </li>
         <li><a href="locations.php">Manage Locations</a></li>
