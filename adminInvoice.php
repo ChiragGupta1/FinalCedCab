@@ -36,10 +36,9 @@ $row = mysqli_fetch_array($sql11);
     <h3>Welcome <?php echo $_SESSION['name']; ?> : Customer Invoice</h3>
 </div>
 <div id="invoice">
-    <a id="invoicelogo" class="primary" href="#">Ced<span>Cab</span></a>
-    <a href="#"><i class="fa fa-list-alt fa-3x"></i>
-        <p>Invoice <i class="fa fa-arrow-down"></i></p>
-    </a>
+    <p id="invoicelogo" class="primary">Ced<span>Cab</span></p>
+    <i class="fa fa-list-alt fa-3x"></i>
+    <p>Invoice <i class="fa fa-arrow-down"></i></p>
     <div>
         <h2>Customer Information:</h2>
         <h4>Account ID: <?php echo $row['user_id'] ?></h4>
